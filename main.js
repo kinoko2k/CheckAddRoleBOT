@@ -11,7 +11,7 @@ client.on('message', function(message) {
 });
 client.on('message', message => {
 	if (message.content.match('!agree')) {
-	let role = message.guild.roles.cache.get("887596982611349586")
+	let role = message.guild.roles.cache.get("付けるID")
 	message.member.roles.add(role)
   	.then(console.log)
   	.catch(console.error)
@@ -19,7 +19,7 @@ client.on('message', message => {
 });
 client.on('message', message => {
 	if (message.content.match('!disagree')) {
-	let role = message.guild.roles.cache.get("887596982611349586")
+	let role = message.guild.roles.cache.get("外すID")
 	message.member.roles.remove(role)
   	.then(console.log)
   	.catch(console.error)

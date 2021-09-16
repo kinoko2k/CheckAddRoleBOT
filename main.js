@@ -5,8 +5,8 @@ client.once('ready', () => {
 	console.log('準備完了！');
 });
 client.on('message', function(message) {
- if (message.content === '!ping') {
-  message.channel.send('!ping');
+ if (message.content === '!rule') {
+  message.channel.send('自由なサーバー3のルールブックです。\nhttps://sites.google.com/view/ziyuu-discord/home/rules');
  }
 });
 client.on('message', message => {
@@ -27,3 +27,4 @@ client.on('message', message => {
 });
 
 client.login('TOKEN');
+
